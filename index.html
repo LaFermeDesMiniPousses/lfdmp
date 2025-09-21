@@ -1,242 +1,63 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
   <title>Ferme des Mini-Pousses – Accueil</title>
-  <meta name="description" content="Ferme des Mini-Pousses à Mornant : visites, animaux, soirées Menthe & Botte de Foin. Réservez votre moment nature.">
-  <link rel="icon" href="data:,">
-  <!-- Open Graph -->
-  <meta property="og:title" content="Ferme des Mini-Pousses – Accueil">
-  <meta property="og:description" content="Visites, animaux, soirées Menthe & Botte de Foin. Réservez votre moment nature.">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="fr_FR">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
   <style>
-    :root{
-      --bg:#faf9f7;
-      --fg:#1e1e1e;
-      --muted:#6b6b6b;
-      --brand:#2e7d32;   /* vert doux */
-      --brand-2:#f0e6d6; /* beige crème */
-      --card:#ffffff;
-      --radius:16px;
-      --shadow:0 6px 24px rgba(0,0,0,.08);
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
-      color:var(--fg); background:var(--bg); line-height:1.55;
-    }
-    a{color:var(--brand); text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:1100px; margin:0 auto; padding:24px}
-    header{
-      position:sticky; top:0; z-index:5; background:rgba(250,249,247,.8); backdrop-filter: blur(8px);
-      border-bottom:1px solid #ece7df;
-    }
-    .nav{display:flex; align-items:center; justify-content:space-between; gap:16px}
-    .brand{display:flex; align-items:center; gap:12px; font-weight:700}
-    .brand .logo{
-      width:40px; height:40px; border-radius:50%; background:var(--brand); display:grid; place-items:center; color:#fff; font-weight:800;
-      box-shadow: var(--shadow);
-    }
-    .menu{display:flex; gap:16px; flex-wrap:wrap}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:10px 16px; border-radius:999px;
-      background:var(--brand); color:#fff; border:0; cursor:pointer; box-shadow:var(--shadow); font-weight:600;
-    }
-    .btn.outline{background:#fff; color:var(--brand); border:1px solid #dfe6df}
-    .hero{
-      background:linear-gradient(180deg, var(--brand-2), #fff 60%);
-      padding:56px 0 32px; border-bottom:1px solid #ece7df;
-    }
-    .hero .grid{
-      display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:center;
-    }
-    .card{
-      background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:20px;
-    }
-    h1{font-size:clamp(28px, 3vw + 12px, 44px); line-height:1.1; margin:0 0 12px}
-    h2{font-size:clamp(22px, 1.6vw + 10px, 32px); margin:24px 0 12px}
-    p.muted{color:var(--muted)}
-    .features{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
-    .feature{background:#fff; border:1px solid #eee4d8; border-radius:14px; padding:16px}
-    .section{padding:36px 0}
-    .embed{
-      border:0; width:100%;
-      height:min(80vh, 900px);
-      border-radius:var(--radius); box-shadow:var(--shadow); background:#fff;
-    }
-    .info-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
-    .info{background:#fff; border:1px solid #eee4d8; border-radius:14px; padding:16px}
-    footer{
-      margin-top:40px; background:#fff; border-top:1px solid #ece7df;
-    }
-    .stack{display:flex; flex-direction:column; gap:10px}
-    .tag{display:inline-block; padding:6px 10px; border-radius:999px; background:#eef3ee; color:#205c25; font-weight:600; font-size:14px}
-    @media (max-width: 900px){
-      .hero .grid{grid-template-columns:1fr}
-      .features, .info-grid{grid-template-columns:1fr}
-    }
+    body{font-family:Arial,sans-serif;margin:0;background:#faf9f7;color:#1e1e1e;}
+    header{background:#2e7d32;color:#fff;padding:20px;text-align:center;}
+    nav a{color:#fff;margin:0 10px;text-decoration:none;}
+    section{padding:40px 20px;max-width:1100px;margin:auto;}
+    footer{background:#eee;padding:20px;text-align:center;margin-top:40px;}
+    iframe{border:0;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.15);}
   </style>
 </head>
 <body>
-
-  <!-- HEADER -->
   <header>
-    <div class="wrap nav">
-      <div class="brand">
-        <div class="logo" aria-hidden="true">FM</div>
-        <span>Ferme des Mini-Pousses</span>
-      </div>
-      <nav class="menu" aria-label="Navigation principale">
-        <a href="#soirees">Soirées</a>
-        <a href="#visites">Visites</a>
-        <a href="#softr">Réservations</a>
-        <a href="#acces">Accès</a>
-        <a class="btn outline" href="tel:+33780967484" aria-label="Appeler pour réserver">📞 07 80 96 74 84</a>
-      </nav>
-    </div>
+    <h1>Ferme des Mini-Pousses 🌿</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="parrainage.html">Parrainage</a>
+      <a href="mentions.html">Mentions légales</a>
+    </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="wrap hero__inner">
-      <div class="grid">
-        <div>
-          <h1>Bienvenue à la Ferme des Mini-Pousses 🌿</h1>
-          <p class="muted">Rencontrez <strong>Rosie</strong> 🐄, <strong>Jumpy</strong> 🦘 et tous nos amis de la ferme, profitez des
-            <strong>soirées Menthe &amp; Botte de Foin</strong> 🍹🔥, et vivez un moment nature en famille.</p>
-          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:14px">
-            <a class="btn" href="#softr">Réserver une activité</a>
-            <a class="btn outline" href="#visites">Découvrir la ferme</a>
-          </div>
-          <p style="margin-top:12px"><span class="tag">📍 Chemin de la Plaine, 69440 Mornant</span></p>
-        </div>
-        <div class="card">
-          <h2 style="margin-top:0">À ne pas manquer</h2>
-          <div class="features">
-            <div class="feature">
-              <strong>Les mignonneries du vendredi</strong>
-              <p class="muted">Des moments tendresse avec nos animaux (comme la petite cane 🦆 qui adore ses graines).</p>
-            </div>
-            <div class="feature" id="soirees">
-              <strong>Menthe &amp; Botte de Foin</strong>
-              <p class="muted">Chaque vendredi (selon météo) : planche à partager, mojitos, feu de camp & chamallows.</p>
-            </div>
-            <div class="feature">
-              <strong>Parrainage d’animaux</strong>
-              <p class="muted">Devenez parrain/marraine de Rosie, Jumpy et cie. Une belle idée cadeau 🎁</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <section>
+    <h2>Bienvenue à la ferme 🐮</h2>
+    <p>Venez rencontrer Rosie 🐄, Jumpy 🦘 et tous nos animaux. 
+       Profitez aussi de nos <strong>soirées Menthe & Botte de Foin</strong> 🍹🔥 
+       et d’animations pour petits et grands.</p>
   </section>
 
-  <!-- INFOS PRATIQUES -->
-  <section class="section" id="visites">
-    <div class="wrap">
-      <h2>Infos pratiques</h2>
-      <div class="info-grid">
-        <div class="info">
-          <strong>Horaires</strong>
-          <div class="stack">
-            <span>Mercredi &amp; Samedi : 14h – 18h</span>
-            <span>Vendredi soir : Soirée Menthe &amp; Botte de Foin (sur réservation)</span>
-          </div>
-        </div>
-        <div class="info">
-          <strong>Tarifs (exemple)</strong>
-          <div class="stack">
-            <span>Adulte : 5 €</span>
-            <span>Enfant (3–12 ans) : 3 € • &lt; 3 ans : gratuit</span>
-            <span>Planche à partager : 25 €</span>
-            <span>Mojito 4 € • Vin 2,50 € • Soft 2 €</span>
-          </div>
-        </div>
-        <div class="info">
-          <strong>Accès</strong>
-          <p class="muted">Un petit <strong>chemin en terre</strong> est à emprunter pour accéder à la ferme 🚜 (il mène bien jusqu’à nous 😉).</p>
-          <div style="display:flex; gap:10px; flex-wrap:wrap;">
-            <a class="btn outline" href="https://maps.google.com/?q=Chemin%20de%20la%20Plaine%2C%2069440%20Mornant" target="_blank" rel="noopener">Voir dans Google Maps</a>
-            <a class="btn" href="tel:+33780967484">Réserver par téléphone</a>
-          </div>
-        </div>
-      </div>
-    </div>
+  <section>
+    <h2>📍 Nous trouver</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.448682586767!2d4.676!3d45.626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4cf6cbe07f52b%3A0x123456789abcdef!2sChemin%20de%20la%20Plaine%2C%2069440%20Mornant!5e0!3m2!1sfr!2sfr!4v1234567890"
+      width="100%" height="400" allowfullscreen="" loading="lazy">
+    </iframe>
   </section>
 
-  <!-- SOFTR EMBED -->
-  <section class="section" id="softr" aria-label="Réservations et contenus dynamiques">
-    <div class="wrap">
-      <h2>Réservations / Contenus dynamiques</h2>
-      <p class="muted">Cette section intègre Softr directement dans le site pour afficher vos listes, formulaires et réservations connectés à votre base (Airtable/Google Sheets).</p>
-
-      <!-- 🔁 REMPLACE l’URL ci-dessous par l’URL publique de ta page Softr -->
-      <iframe
-        class="embed"
-        title="Softr – Réservations"
-        src="https://torri48759.softr.app"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allow="clipboard-write; fullscreen"
-      ></iframe>
-
-      <noscript>Activez JavaScript pour afficher le module Softr intégré.</noscript>
-    </div>
+  <section>
+    <h2>Réservations Softr</h2>
+    <iframe src="https://YOUR-APP.softr.app" 
+            width="100%" height="600" loading="lazy"></iframe>
   </section>
 
-  <!-- CONTACT / ADRESSE -->
-  <section class="section" id="acces">
-    <div class="wrap">
-      <h2>Nous contacter</h2>
-      <div class="card">
-        <p><strong>Adresse :</strong> Chemin de la Plaine, 69440 Mornant</p>
-        <p><strong>Téléphone :</strong> <a href="tel:+33780967484">07 80 96 74 84</a></p>
-        <p><strong>Astuce :</strong> un petit chemin en terre est à prévoir sur la fin du parcours 🚜.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
   <footer>
-    <div class="wrap" style="display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;">
-      <p class="muted">© <span id="year"></span> Ferme des Mini-Pousses — Mornant (69440)</p>
-      <p class="muted">Site statique · Chatbot intégré · Softr embarqué</p>
-    </div>
+    <p>© Ferme des Mini-Pousses – Chemin de la Plaine, 69440 Mornant – 
+       📞 07 80 96 74 84</p>
   </footer>
 
-  <script>
-    // Année courante
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-
-  <!-- 💬 CHATBOT LIMOVA – script fourni (intégré tel quel) -->
+  <!-- Chatbot Limova -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       var e = document.createElement("iframe");
       e.src = "https://www.app.limova.ai/embededChatbot?id=68cfc729b259418d16e07725";
-      const i = innerWidth < 768,
-            o = i ? "90%" : "420px",
-            t = i ? "calc(100vh - 100px)" : "600px";
-      Object.assign(e.style, {
-        position: "fixed", bottom: "0", right: i ? "5%" : "30px",
-        border: "none", zIndex: "1000", width: o, height: t, borderRadius: "10px"
-      });
+      Object.assign(e.style,{position:"fixed",bottom:"0",right:"30px",
+        border:"none",zIndex:"1000",width:"420px",height:"600px",borderRadius:"10px"});
       document.body.appendChild(e);
-      window.addEventListener("message", n => {
-        const d = n.data;
-        if (d && typeof d === "object") {
-          if (d.chatbotOpen === true) {
-            e.style.width = o, e.style.height = t
-          } else if (d.chatbotOpen === false) {
-            e.style.width = "50px", e.style.height = "70px"
-          }
-        }
-      })
     });
   </script>
 </body>
